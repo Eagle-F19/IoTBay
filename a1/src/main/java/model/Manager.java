@@ -4,14 +4,27 @@ public class Manager {
     private String email;
     private String password;
 
-    public Manager(String name, int mobile, String email, String password) {
+    public Manager(int staffId,String name, int mobile, String email, String password, String position, String address, String status) {
+        this.staffId = staffId;
         this.name = name;
         this.mobile = mobile;
         this.email = email;
         this.password = password;
+        this.position = position;
+        this.address = address;
+        this.status = status;
     }
 
+
     // Standard getters and setters
+    public int getStaffId() { 
+        return staffId; 
+    }
+    
+    public void setStaffId(int staffId) { 
+        this.staffId = staffId;
+    }
+    
     public String getName() {
         return name;
     }
@@ -23,14 +36,16 @@ public class Manager {
     public int getMobile() {
         return mobile;
     }
-
+   public void setMobile(int mobile) {
+        this.mobile = mobile;
+    }
+    
     public String getPassword() {
         return password;
     }
-
-
-    public void setMobile(int mobile) {
-        this.mobile = mobile;
+    
+    public void setPassword(String password){
+        this.password = password;
     }
 
     public String getEmail() {
@@ -41,8 +56,27 @@ public class Manager {
         this.email = email;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public String getPosition() { 
+        return position;
     }
     
+    public void setPosition(String position) { 
+        this.position = position;
+    }
+
+    public String getAddress() { 
+        return address;
+    }
+    
+    public void setAddress(String address) { 
+        this.address = address;
+    }
+
+    public String getStatus() { 
+        return status;
+    }
+    
+    public void setStatus(String status) { 
+        this.status = status;
+    }
 }
