@@ -1,8 +1,12 @@
 public class Manager {
+    private int staffId
     private String name;
     private int mobile;
     private String email;
     private String password;
+    private String position;
+    private String address;
+    private String status; // "Active" or "Inactive"
 
     public Manager(int staffId,String name, int mobile, String email, String password, String position, String address, String status) {
         this.staffId = staffId;
